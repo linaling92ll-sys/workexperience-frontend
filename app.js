@@ -10,9 +10,22 @@ async function getWork() {
 
     const list = document.getElementById("list");
 
+    list.innerHTML = "";
+    //Lagt en ta bort knapp i HTML så att man ska kunna ta bort erfarenheter
     data.forEach(item => {
-        list.innerHTML += `<p>${item.companyname}</p>`;
+        list.innerHTML += `<p>${item.companyname}
+                                <button onclick="deleteWork(${item.id})">Ta bort </button>
+                                </p>`;
     });
 }
-
 getWork();
+
+//Funktion som tar bort arbetserfarenheter och frågar användaren om den verkligen vill ta bort.
+async function deleteWork(id) {
+    if (!confirm("Vill du verkligen ta bort?")) return;
+
+    await fetch(`${URL}/${id}`, {
+        method: "DELETE"
+    });
+    getWork();
+}
