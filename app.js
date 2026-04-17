@@ -29,3 +29,4 @@ async function deleteWork(id) {
     });
     getWork();
 }
+
