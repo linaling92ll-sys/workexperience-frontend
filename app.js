@@ -1,5 +1,5 @@
 //URL till min API
-const URL = "http://localhost:3000/api/work";
+const URL = "https://workexperience-api.onrender.com/api/work";
 
 //Funktion som hämtar alla arbetserfarenheter från mitt API
 async function getWork() {

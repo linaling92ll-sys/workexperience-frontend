@@ -1,5 +1,5 @@
 //URL till API
-const URL = "http://localhost:3000/api/work";
+const URL = "https://workexperience-api.onrender.com/api/work";
 
 //Vänta till sidan laddat klart
 document.addEventListener("DOMContentLoaded", () => {
