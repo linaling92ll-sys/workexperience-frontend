@@ -23,3 +23,9 @@ Applikationen använder Fetch API för att kommunicera med backend.
 ## Koppling till backend
 Frontend skickar anrop till följande API:
 http://localhost:3000/api/work
+
+### Frontend (live):
+[Work Experience](https://workexperience-frontend.onrender.com/index.html)
+
+### Backend(API)
+[Work Experience API](https://workexperience-api.onrender.com/api/work) 
