@@ -5,31 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Experience</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <h1>Lägg till arbetserfarenhet</h1>
-
     <nav>
         <a href="index.html">Startsida</a>
         <a href="add.html">Lägg till erfarenhet</a>
         <a href="about.html">Om sidan</a>
     </nav>
+    <div class="container">
+        <h1>Lägg till arbetserfarenhet</h1>
 
-    <form id="form">
-        <input id="companyname" placeholder="Företag">
-        <input id="jobtitle" placeholder="Yrkestitel">
-        <input id="location" placeholder="Stad">
-        <input id="startdate" placeholder="Startdatum">
-        <input id="enddate" placeholder="Slutdatum">
-        <input id="description" placeholder="Beskrivning">
 
-        <button type="submit">Spara</button>
-    </form>
+        <form id="form">
+            <input id="companyname" placeholder="Företag">
+            <input id="jobtitle" placeholder="Yrkestitel">
+            <input id="location" placeholder="Stad">
+            <input id="startdate" placeholder="Startdatum">
+            <input id="enddate" placeholder="Slutdatum">
+            <input id="description" placeholder="Beskrivning">
 
-    <p id="message"></p>
-    <script src="add.js"></script>
+            <button type="submit">Spara</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+    <script src="js/add.js"></script>
 </body>
 
 </html>
