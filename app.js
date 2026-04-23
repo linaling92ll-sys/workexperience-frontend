@@ -13,9 +13,18 @@ async function getWork() {
     list.innerHTML = "";
     //Lagt en ta bort knapp i HTML så att man ska kunna ta bort erfarenheter
     data.forEach(item => {
-        list.innerHTML += `<p>${item.companyname}
-                                <button onclick="deleteWork(${item.id})">Ta bort </button>
-                                </p>`;
+        list.innerHTML += `
+        <div class="card">
+        <h3>${item.companyname}</h3>
+        <p><strong>Roll:</strong> ${item.jobtitle}</p>
+        <p><strong>Plats:</strong> ${item.location}</p>
+        <p><strong>Start:</strong> ${item.startdate}</p>
+        <p><strong>Slut:</strong> ${item.enddate || "Pågående"}</p>
+        <p>${item.description}</p>
+
+        <button onclick="deleteWork(${item.id})">Ta bort</button>
+    </div>
+`;
     });
 }
 getWork();
